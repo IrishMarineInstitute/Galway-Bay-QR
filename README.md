@@ -32,7 +32,8 @@ The process should run every five minutes (this can be modified in the `crontab`
 # The Connemara container
 The Connemara container works exactly in the same way as Galway-Bay. It is used to cover the site at Gleninagh, which falls outside the Galway Bay model coverage. Use same instructions for building and deploying the container.
 
-
+# The eBird container
+The eBird container takes advantage of the eBird project (ebird.org) and eBird API (pypi.org/project/ebird-api) to download 
 
 
 
