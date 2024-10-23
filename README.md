@@ -17,7 +17,7 @@ The next step is to initialize each container. crontab is used to schedule tasks
 # The Galway-Bay container
 Every five minutes, this container reads the latest Galway Bay forecasts from the Marine Institute THREDDS catalog (milas.marine.ie). For each site, the latest temperatures and salinities are obtained, and the absolute minima and maxima in a 3-day forecast are determined. Hourly sea levels from the operational model are interpolated to 1-minute frequency to determine the next times of high tide and low tide. This information is saved into the shared volume to be accessed by the webapp container.
 
-In order to deploy this container, first look at the `config` file. Site names and coordinates are listed here. It is possible to add or remove sites by updating this list, making sure that sites and coordinates are separated by commas following the example provided. Sites should be within the Galway Bay model boundaries, which cover the whole of Galway Bay east of 9º12'43.2"W. To add site names containing special characters like whitespaces, follow the examples of New Quay and Bishop's Quarter. This is required to have the site names properly displayed on the portal.
+In order to deploy this container, first look at the `config` file. Site names and coordinates are listed here. It is possible to add or remove sites by updating this list, making sure that sites and coordinates are separated by commas following the example provided. Sites should be within the Galway Bay model boundaries, which cover the whole of Galway Bay east of 9º12'43.2"W. To add site names containing special characters like whitespaces, follow the examples of New Quay and Bishop's Quarter. This is required to have the site names properly displayed on the portal. Also, some sites have been moved a little offshore, to ensure that the site does not dry out during the low tide. This is needed to ensure a smooth tidal signal and proper indication of low tide times.
 
 Navigate to the Galway-Bay directory and execute the following:
 
@@ -33,7 +33,8 @@ The process should run every five minutes (this can be modified in the `crontab`
 The Connemara container works exactly in the same way as Galway-Bay. It is used to cover the site at Gleninagh, which falls outside the Galway Bay model coverage. Use same instructions for building and deploying the container.
 
 # The eBird container
-The eBird container takes advantage of the eBird project (ebird.org) and eBird API (pypi.org/project/ebird-api) to download 
+The eBird container takes advantage of the eBird project (ebird.org) and eBird API (pypi.org/project/ebird-api) to download latest bird observations in the area. To deploy this container, you need first to register into eBird and obtain and API key. This key should 
+be entered into the `config` file, together with the site names and coordinates. The last line of the `config` is the searching radius [km] around each site to retrieve bird observations.
 
 
 
