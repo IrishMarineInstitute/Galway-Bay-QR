@@ -45,6 +45,4 @@ WORKDIR /usr/src/app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Copy required files 
-COPY config .
 COPY [ "*.py" , "/usr/src/app/" ]
