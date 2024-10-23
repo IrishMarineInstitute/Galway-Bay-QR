@@ -1,0 +1,1 @@
+0 20 * * * /usr/local/bin/python /root/main.py 

@@ -1,0 +1,393 @@
+.mobile {
+  display: none;
+}
+
+.ipad {
+  display: none;
+}
+
+.desktop-ipad {
+  display: block;
+}
+
+.languages-portrait {
+  display: none;
+}
+
+.languages-landscape {
+  display: none;
+}
+
+.languages-tiny-landscape {
+  display: none;
+}
+
+.languages-tiny {
+  display: none;
+}
+
+.languages-desktop {
+  display: block;
+}
+
+.languages-ipad {
+  display: none;
+}
+
+.languages-folder {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.topcorner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+ }
+
+.intro {
+  text-align: justify;
+  font-size: 24px;
+}
+
+#funding {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-size: 10px;    
+    margin-bottom: 10px;
+}
+
+.MarineObservatory {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: normal;
+    transform: scale(1, 1.5);
+    -webkit-transform: scale(1, 1.5);
+    -moz-transform: scale(1, 1.5);
+    -o-transform: scale(1, 1.5);
+    transform-origin: 0% 20%; 
+    color: #605c5c;
+}
+
+.unpadded {
+  padding: 0
+}
+
+p {
+   font-family: Calibri;
+   font-size: 15px;
+   align: justify;
+}
+
+img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+textarea {
+  width: 100%;
+  font-size: 19px;
+}
+
+.responsive {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.landscape {
+   height: 75px;
+   width: 150px;
+}
+
+.footer {
+   width: 100%;
+}
+
+.Deenish {
+   margin-top: 10px;
+   height: 264px;
+   width: 264px;
+   display: inline-block;
+   float: left;
+   background-image: url('/static/Deenish.png');
+   background-repeat: no-repeat;
+}
+
+.Campello {
+   margin-top: 10px;
+   height: 264px;
+   width: 264px;
+   display: inline-block;
+   float: left;
+   background-image: url('/static/El-Campello.png');
+   background-repeat: no-repeat;
+ }
+
+ .links {
+   margin-top: 10px;
+   height: 264px;
+   width: 264px;
+   display: inline-block;
+   float: right;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .button {
+    background-color: #123944;
+    width: 250px;
+    border-radius: 5px;
+    padding: 11px 15px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #FFFFFF
+ }
+
+ .play-button {
+    background-color: #123944;
+    width: 100px;
+    border-radius: 5px;
+    padding: 11px 15px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF
+ }
+
+ .center {
+    height: 10px;
+    line-height: 10px;
+ }
+
+ .button:hover { background-color: #05C3DD }
+
+ .helpdesk:hover { background-color: #FFA500 }
+
+ .question-heading {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px auto;
+ }
+
+ .answer-label {
+    font-size: 30px;
+    margin-right: 75px;
+ }
+
+ .submit {
+    width: 120px;
+    font-size: 30px;
+ }
+
+ .answers {
+    text-align: center;
+ }
+
+ .email-input {
+    margin-top: 5px;
+    width: 80%;
+    float: right;
+ }
+
+ .label {
+    font-family: Arial;
+    font-size: 20px;
+    margin-top: 30px;
+        }
+
+ .icon {
+    margin-top: 10px;
+        }
+
+ h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     }
+
+ h2:before,
+ h2:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+          }
+
+ h2:after {
+    margin: 0 0 0 20px;
+          }
+
+ h2 {
+    margin: 0px 0;
+    font: 700 2em/1.4 'Avenir', sans-serif;
+    }
+
+.value-box-1 {       
+    font-size: 28px;
+    font-weight: bold;       
+    width: 120px;
+    text-align: center;       
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 15px;     
+}
+
+.value-box-2 {       
+    font-size: 20px;
+    font-weight: bold;       
+    width: 110px;
+    text-align: center;       
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 15px;     
+}
+
+.helpdesk {
+   background-color: #FF0000;
+   width: 200px;
+   border-radius: 5px;
+   padding: 5px 0px;
+   border: none;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   margin: 10px auto;
+   font-size: 16px;
+   font-weight: bold;
+   color: #FFFFFF
+}
+
+#start {
+  width: 200px;
+  padding: 0px;
+  margin: 0px;    
+  font-size: 24px;
+}
+
+#end {
+  width: 200px;
+  padding: 0px;
+  margin: 0px;    
+  font-size: 24px;
+}
+
+#start-label {
+  text-align: justify;
+  font-size: 24px;
+  font-family: Calibri;
+  padding: 0px;
+  margin: 0px;    
+}
+
+#end-label {
+  text-align: left;
+  font-size: 24px;
+  font-family: Calibri;
+  padding: 0px;
+}
+
+#submit-historical {
+    width: 125px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+ }
+
+#time {
+    background-color: #123944;
+    width: 530px;
+    border-radius: 5px;
+    line-height: 60px;
+    border: none;
+    text-align: center;     
+    font-size: 20px;
+    color: #FFFFFF
+}
+
+#time-small {
+    background-color: #123944;
+    width: 530px;
+    border-radius: 5px;
+    line-height: 60px;
+    border: none;
+    text-align: center;     
+    font-size: 16px;
+    color: #FFFFFF
+}
+
+.galway-databox {
+  width: 65%;
+  border-radius: 5px;
+  #border: solid thin black;
+  display: block;
+}
+
+.galway-context {
+  background-color: #123944;
+  width: 96%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 5px auto;
+  font-size: 24px;
+  color: #FFFFFF
+}
+
+.galway-cols {
+  width: 19%;
+  height: 65px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.galway-headers {
+  width: 19%;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.galway-label {
+  font-size: 14px;
+}
+
+.galway-circle {
+  width: 25%;
+  height: 50px;
+  border-radius: 30px;
+  border: solid thin black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}

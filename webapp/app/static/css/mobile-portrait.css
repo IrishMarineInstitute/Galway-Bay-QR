@@ -1,0 +1,422 @@
+.mobile {
+  display: block;
+}
+
+.ipad {
+  display: none;
+}
+
+.desktop-ipad {
+  display: none;
+}
+
+.languages-portrait {
+  display: block;
+}
+
+.languages-tiny {
+  display: none;
+}
+
+.languages-landscape {
+  display: none;
+}
+
+.languages-tiny-landscape {
+  display: none;
+}
+
+.languages-desktop {
+  display: none;
+}
+
+.languages-ipad {
+  display: none;
+}
+
+.languages-folder {
+  display: none;
+}
+
+.languageLabel {
+  margin-top: 5px;
+  margin-right: 0px;
+  font-size: 8px;
+}
+
+.desktop {
+  display: none;
+}
+
+.intro {
+  text-align: justify;
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;    
+}
+
+.acknowledgements {
+  text-align: justify;
+  font-size: 5px;
+}
+
+.disclaimer {
+  text-align: justify;
+  font-size: 5px;
+}
+
+#funding {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-size: 5px;    
+    margin-bottom: 10px;
+}
+
+.MarineObservatory {
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: normal;
+    transform: scale(1, 1.5);
+    -webkit-transform: scale(1, 1.5);
+    -moz-transform: scale(1, 1.5);
+    -o-transform: scale(1, 1.5);
+    transform-origin: 0% 20%; 
+    color: #605c5c;
+}
+
+.unpadded {
+  padding: 0
+}
+
+p {
+  font-family: Calibri;
+  font-size: 15px;
+  align: justify;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+textarea {
+   width: 100%;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+}
+
+.center {
+  height: 10px;
+  line-height: 10px;
+}
+
+.landscape {
+  height: 20px;
+  width: 40px;
+}
+
+.topcorner{
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:1;
+ }
+
+.button {
+  background-color: #123944;
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 11px 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+  font-size: 9px;
+  color: #FFFFFF
+}
+
+.helpdesk {
+   background-color: #FF0000;
+   width: 100px;
+   border-radius: 5px;
+   padding: 5px 0px;
+   border: none;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   margin: 10px auto;
+   font-size: 10px;
+   font-weight: bold;
+   color: #FFFFFF
+}
+
+ .helpdesk:hover { background-color: #FFA500 }
+
+ .question-heading {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+ .submit {
+    width: 200px;
+    font-size: 30px;
+ }
+
+ .answer-label {
+    font-size: 8px;
+    margin-right: 2px;
+ }
+
+ .answers {
+    text-align: center;
+ }
+
+ .email-input {
+    width: 40%;
+    float: right;
+ }
+
+ .email-label {
+    font-family: Calibri;
+    font-size: 14px;
+ } 
+
+hr {
+    padding: 0px;
+    margin: 0px;    
+   }
+
+h2 {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    }
+
+h2:before,
+h2:after {
+   content: '';
+   border-top: 2px solid;
+   margin: 0 20px 0 0;
+   flex: 1 0 20px;
+         }
+
+h2:after {
+   margin: 0 0 0 20px;
+         }
+
+h2 {
+   margin: 0px 0;
+   font: 300 1.5em/1.4 'Avenir', sans-serif;
+   }
+
+.mobile-input {
+    background-color: #123944;
+    width: 270px;
+    border-radius: 5px;
+    line-height: 60px;
+    border: none;
+    text-align: center;     
+    font-size: 11.5px;
+    color: #FFFFFF;
+    float: center;
+   }
+
+.label-value {
+   font-size: 14px;
+   margin-top: 8px;
+   margin-bottom: 0px;
+   }
+
+.value-box-1 {       
+    font-size: 14px;
+    font-weight: bold;       
+    width: 60px;
+    text-align: center;       
+    margin-top: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;     
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: separate;
+  border-spacing: 0 250px;
+}
+
+td { 
+   color: #1239444;
+   font-family: Calibri;
+   font-size: 12px;
+   font-weight: bold;
+   width: 50px;
+   text-align: center;
+   border: 1px solid black;
+ }
+
+th {
+  background-color: #123944;
+  color: white;
+  font-family: Calibri;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid white;
+  word-break: break-all;
+  max-width: 50px;
+}
+
+thead th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+}
+
+tbody th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+}
+
+/* To have the header in the first column stick to the left: */
+thead th:first-child {
+  left: 0;
+  z-index: 2;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5em;
+}
+
+#wave-table { 
+  height: 130px;
+  margin-top: 20px;
+}
+
+caption {
+    text-align: left;
+    position: absolute;
+    z-index: 99;
+    margin-top: -20px;
+    margin-left: 10px;
+    display: table-header-group;
+    font-size: 11px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+#latest-wind-speed {
+    font-size: 13px;
+}
+
+#start {
+  width: 75px;
+  padding: 0px;
+  margin: 0px;    
+  font-size: 8.5px;
+}
+
+#end {
+  width: 75px;
+  padding: 0px;
+  margin: 0px;    
+  font-size: 8.5px;
+}
+
+#start-label {
+  text-align: justify;
+  font-size: 8.5px;
+  padding: 0px;
+  margin: 0px;    
+}
+
+#end-label {
+  text-align: left;
+  font-size: 8.5px;
+  padding: 0px;
+}
+
+#submit-historical {
+    width: 125px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+ }
+
+.galway-databox {
+  width: 100%;
+  border-radius: 5px;
+  border: solid thin black;
+  display: block;
+}
+
+.galway-context {
+  background-color: #123944;
+  width: 96%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 5px auto;
+  font-size: 14px;
+  color: #FFFFFF
+}
+
+.galway-cols {
+  width: 23%;
+  height: 55px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.galway-headers {
+  width: 23%;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.galway-label {
+  font-size: 10px;
+}
+
+.galway-circle {
+  width: 58%;
+  height: 50px;
+  border-radius: 30px;
+  border: solid thin black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
