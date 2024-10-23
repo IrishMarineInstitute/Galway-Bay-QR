@@ -6,4 +6,4 @@ The software is structured in three backend containers (Galway-Bay, Connemara an
 # The Galway-Bay container
 Every five minutes, this container reads the latest Galway Bay forecasts from the Marine Institute THREDDS catalog (milas.marine.ie). For each site, the latest temperatures and salinities are obtained, and the absolute minima and maxima in a 3-day forecast are determined. Hourly sea levels from the operational model are interpolated to 1-minute frequency to determine the next times of high tide and low tide. This information is saved into the shared volume to be accessed by the webapp container.
 
-In order to deploy this container, first look at the 'config' file.
+In order to deploy this container, first look at the `config` file. Site names and coordinates are listed here. It is possible to add or remove sites by updating this list, making sure that sites and coordinates are separated by commas following the example provided. Sites should be within the Galway Bay model boundaries, which cover the whole of Galway Bay east of 9º12'43.2"W.
