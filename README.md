@@ -48,9 +48,7 @@ The process should start at the time specified in the `crontab` file. Change thi
 
 `docker rm -f bird;`
 
-Or change the container name accordingly.
-
-Once the `bird` process is finished, a set of files are created at the `/data/` folder for each site, containing pictures and observations.
+Or change the container name accordingly. Once the `bird` process is finished, a set of files are created at the `/data/` folder for each site, containing pictures and observations.
 
 # The webapp container
 After moving to the `webapp` directory, you can deploy the web application by running:
