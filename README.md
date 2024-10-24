@@ -53,6 +53,6 @@ Or change the container name accordingly. Once the `bird` process is finished, a
 # The webapp container
 After moving to the `webapp` directory, you can deploy the web application by running:
 
-`docker build -t webapp:latest .; docker run -d --restart=on-failure --name=webapp -p 80:80 -v $PWD:/app -v shared-data:/data webapp:latest`
+`docker build -t webapp:latest .; docker run -d --restart=on-failure --name=webapp -p 80:80 -v echo{PWD}:/app -v shared-data:/data webapp:latest`
 
 You should be able to access the web application at `localhost:80` in your browser.

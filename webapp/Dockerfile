@@ -1,5 +1,8 @@
+#(C) Copyright EuroSea H2020 project under Grant No. 862626. All rights reserved.
+
+# Copyright notice
 #   --------------------------------------------------------------------
-#   Copyright (C) 2024 Marine Institute
+#   Copyright (C) 2022 Marine Institute
 #       Diego Pereiro Rodriguez
 #
 #       diego.pereiro@marine.ie
@@ -42,4 +45,5 @@ WORKDIR /usr/src/app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
+# Copy required files 
 COPY [ "*.py" , "/usr/src/app/" ]

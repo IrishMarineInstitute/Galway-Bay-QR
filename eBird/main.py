@@ -104,6 +104,7 @@ def main():
             'Sec-Fetch-Mode': 'navigate',
             'Sec-Fetch-User': '?1',
             'Sec-Fetch-Dest': 'document',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Accept-Encoding': 'gzip, deflate',
             'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'
             }
