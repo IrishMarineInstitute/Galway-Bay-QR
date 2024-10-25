@@ -4,7 +4,7 @@ This project is a collaboration between Cuan Beo and the Marine Institute. The m
 The software is structured in three backend containers (Galway-Bay, Connemara and eBird) and a frontend container (webapp). These containers have to be deployed independently and interact with each other through a shared volume. 
 
 # Installation
-These instructions have been tested on Ubuntu 18.04.6 LTS (Bionic Beaver). First, download the code with:
+First, download the code with:
 
 `git clone https://github.com/IrishMarineInstitute/Galway-Bay-QR.git`
 
