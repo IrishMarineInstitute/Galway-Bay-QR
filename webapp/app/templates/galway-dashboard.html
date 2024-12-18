@@ -16,9 +16,12 @@
 
     <link rel="icon" href="../../static/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../../static/css/simplegrid.css" />
-    <link rel="stylesheet" type="text/css" media='(min-width: 1024px)' href="../../static/css/dashboard.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 1024px)' href="../../static/css/desktop.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 768px) and (max-width: 1024px)' href="../../static/css/ipad.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 540px) and (max-width: 768px)' href="../../static/css/duo.css?ref=v1" />
     <link rel="stylesheet" type="text/css" media='(min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)' href="../../static/css/mobile-portrait.css?ref=v1" />
     <link rel="stylesheet" type="text/css" media='(min-width: 700px) and (max-height: 575.98px) and (orientation: landscape)' href="../../static/css/mobile-landscape.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(max-width: 700px) and (max-height: 575.98px) and (orientation: landscape)' href="../../static/css/tiny-landscape.css?ref=v1" />
     <link rel="stylesheet" type="text/css" media='(min-device-width: 1px) and (max-device-width: 320px) and (orientation: portrait)' href="../../static/css/mobile-portrait.css?ref=v1" />
 
 		<script src="../../static/js/galway.js"></script>
@@ -193,10 +196,15 @@
 	    <a href="https://pikbest.com/free-png-images/people-icon.html" title="salinity icon"
 		    style="font-size:5px;">Salinity icon from pikbest.com</a>
 
+	    <div class="desktop">
+				<p> Scan the QR below for mobile layout: </p>
+				<img src="../../static/QR-{{names}}.png" >
+	    </div>
+
 	<script language="javascript" type="text/javascript">
 		var map = L.map('map').setView([{{latdec}}, {{londec}}], 13);
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		    maxZoom: 19,
+		    maxZoom: 12,
 		    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
 		

@@ -38,7 +38,7 @@ def monthly_observations(data, month):
         month -= 1 # Inspect previous month
         if not month: # Manage transition from January to December
             month = 12 # December
-        monthly_observations(data, month) # Repeat
+        return monthly_observations(data, month) # Repeat
 
 def mon(record):
     ''' Get month from eBIRD record '''
@@ -104,7 +104,6 @@ def main():
             'Sec-Fetch-Mode': 'navigate',
             'Sec-Fetch-User': '?1',
             'Sec-Fetch-Dest': 'document',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Accept-Encoding': 'gzip, deflate',
             'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'
             }
@@ -218,7 +217,7 @@ def main():
             # Get name of this month
             month_istr = date(2000, month_i, 1).strftime('%B')
 
-            web['title'] = f'Birds in {monthstr}'
+            web['title'] = f'Birds in {month_istr}'
 
             for k, v in data.items():
                 # Get time of observation
