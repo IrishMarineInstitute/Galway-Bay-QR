@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galway Bay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" type="text/css" href="../static/css/simplegrid.css" />
+    <link rel="icon" href="../static/favicon.ico">
+    <link rel="stylesheet" type="text/css" media='(min-width: 1024px)' href="../static/css/desktop.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 768px) and (max-width: 1024px)' href="../static/css/ipad.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 540px) and (max-width: 768px)' href="../static/css/duo.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)' href="../static/css/mobile-portrait.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 700px) and (max-height: 575.98px) and (orientation: landscape)' href="../static/css/mobile-landscape.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(max-width: 700px) and (max-height: 575.98px) and (orientation: landscape)' href="../static/css/tiny-landscape.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-device-width: 1px) and (max-device-width: 320px) and (orientation: portrait)' href="../static/css/mobile-portrait.css?ref=v1" />
+
+	<link rel="stylesheet" href="../static/css/leaflet.css" />
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/leaflet.js"></script>
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../static/css/Leaflet.Coordinates-0.1.5.css" />
+	<script type="text/javascript" src="../static/js/Leaflet.Coordinates-0.1.5.min.js"></script>
+
+<script>
+
+var create_map = function(){
+    map = L.map('map', {
+    zoom: 11.,
+		    minZoom: 11.,
+		    maxZoom: 11.,
+    center: [{{latitude}}, {{longitude}}]
+    });
+    var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+var markers = [];
+    
+    var marker1 = L.marker([53.2427, -8.96655]).addTo(map).bindPopup("Renville");
+    markers.push(marker1);
+    marker1.on('mouseover',function(ev) {
+      marker1.openPopup();
+    });
+    
+    var marker2 = L.marker([53.2083, -8.95765]).addTo(map).bindPopup("Ballinacourty");
+    markers.push(marker2);
+    marker2.on('mouseover',function(ev) {
+      marker2.openPopup();
+    });
+    
+    var marker3 = L.marker([53.2107, -8.93587]).addTo(map).bindPopup("Blackweir");
+    markers.push(marker3);
+    marker3.on('mouseover',function(ev) {
+      marker3.openPopup();
+    });
+    
+    var marker4 = L.marker([53.2131, -8.92301]).addTo(map).bindPopup("Cave");
+    markers.push(marker4);
+    marker4.on('mouseover',function(ev) {
+      marker4.openPopup();
+    });
+    
+    var marker5 = L.marker([53.1977, -8.94577]).addTo(map).bindPopup("Killeenaran");
+    markers.push(marker5);
+    marker5.on('mouseover',function(ev) {
+      marker5.openPopup();
+    });
+    
+    var marker6 = L.marker([53.1662, -8.94478]).addTo(map).bindPopup("Tarrea");
+    markers.push(marker6);
+    marker6.on('mouseover',function(ev) {
+      marker6.openPopup();
+    });
+    
+    var marker7 = L.marker([53.1466, -8.93884]).addTo(map).bindPopup("Kinvara");
+    markers.push(marker7);
+    marker7.on('mouseover',function(ev) {
+      marker7.openPopup();
+    });
+    
+    var marker8 = L.marker([53.1567, -8.94973]).addTo(map).bindPopup("Crushoa");
+    markers.push(marker8);
+    marker8.on('mouseover',function(ev) {
+      marker8.openPopup();
+    });
+    
+    var marker9 = L.marker([53.1716, -8.96754]).addTo(map).bindPopup("Parkmore");
+    markers.push(marker9);
+    marker9.on('mouseover',function(ev) {
+      marker9.openPopup();
+    });
+    
+    var marker10 = L.marker([53.1745, -8.98734]).addTo(map).bindPopup("Traught");
+    markers.push(marker10);
+    marker10.on('mouseover',function(ev) {
+      marker10.openPopup();
+    });
+    
+    var marker11 = L.marker([53.1722, -9.00515]).addTo(map).bindPopup("Newtownlynch");
+    markers.push(marker11);
+    marker11.on('mouseover',function(ev) {
+      marker11.openPopup();
+    });
+    
+    var marker12 = L.marker([53.1567, -9.07542]).addTo(map).bindPopup("New Quay");
+    markers.push(marker12);
+    marker12.on('mouseover',function(ev) {
+      marker12.openPopup();
+    });
+    
+    var marker13 = L.marker([53.1579, -9.08631]).addTo(map).bindPopup("Flaggy Shore");
+    markers.push(marker13);
+    marker13.on('mouseover',function(ev) {
+      marker13.openPopup();
+    });
+    
+    var marker14 = L.marker([53.1223, -9.07267]).addTo(map).bindPopup("Bellharbour");
+    markers.push(marker14);
+    marker14.on('mouseover',function(ev) {
+      marker14.openPopup();
+    });
+    
+    var marker15 = L.marker([53.1342, -9.13184]).addTo(map).bindPopup("Bishop's Quarter");
+    markers.push(marker15);
+    marker15.on('mouseover',function(ev) {
+      marker15.openPopup();
+    });
+    
+    var marker16 = L.marker([53.1276, -9.14866]).addTo(map).bindPopup("Ballyvaughan");
+    markers.push(marker16);
+    marker16.on('mouseover',function(ev) {
+      marker16.openPopup();
+    });
+    
+    var marker17 = L.marker([53.1419, -9.22391]).addTo(map).bindPopup("Gleninagh");
+    markers.push(marker17);
+    marker17.on('mouseover',function(ev) {
+      marker17.openPopup();
+    });
+    
+    function markerFunction(id){
+        for (var i in markers){
+            var markerID = markers[i].options.title;
+            if (markerID == id){
+                markers[i].openPopup();
+            };
+        }
+    }
+    
+    $("a").click(function(){
+        markerFunction($(this)[0].id);
+    });
+
+  $("#latitude").change(update_marker_location);
+  $("#longitude").change(update_marker_location);
+   {% if shrink_domain %}
+    var setShrinkDomain = function(bounds){
+	    var northwest = bounds.getNorthWest();
+	    var southeast = bounds.getSouthEast();
+       $("#northwest_lat").val(northwest.lat);
+       $("#northwest_lon").val(northwest.lng);
+       $("#southeast_lat").val(southeast.lat);
+       $("#southeast_lon").val(southeast.lng);
+    }
+    var areaSelect = L.areaSelect({width:map.getSize().x - 10, height: map.getSize().y - 10});
+    areaSelect.on("change", function() {
+     setShrinkDomain(this.getBounds());
+    });
+    areaSelect.addTo(map);
+    setShrinkDomain(areaSelect.getBounds());
+   {% endif %}
+};
+
+$(document).ready(function(){
+    $("input:text").focus(function() { $(this).select(); } );
+   create_map();
+   $("#project_name").focus();
+});
+
+</script>
+
+</head>
+
+<body>         
+        <div class="grid">
+            <div class="col-1-1">
+                <div class="content unpadded">
+                    <h1 class="MarineObservatory"> GALWAY BAY QR PROJECT </h1> <hr> </div> </div>
+        </div>
+
+                <div class="grid">
+    		   <div class="col-1-1">
+    			<div class="content unpadded">
+                           <div class="footer">
+                               <p class="intro"> 
+			           Real-time information of the oceanographic conditions at different locations in Galway Bay.
+                               </p>
+                            </div> 
+                         </div>
+                      </div>
+                </div>
+
+	<div class="grid">
+		<div class="col-1-4">
+			<div class="content">
+			      <form method="POST" action="/">
+				<input class="button" type="submit" value="Traught" style="padding:2px 0px;"
+				    name="Traught" />
+				<input class="button" type="submit" value="Newtownlynch"  style="padding:2px 0px;"
+				    name="Newtownlynch" />
+				<input class="button" type="submit" value="New Quay"  style="padding:2px 0px;"
+				    name="New-Quay" />
+				<input class="button" type="submit" value="Flaggy Shore"  style="padding:2px 0px;"
+				    name="Flaggy-Shore" />
+				 <input class="button" type="submit" value="Bellharbour"  style="padding:2px 0px;"
+				    name="Bellharbour" />
+				<input class="button" type="submit" value="Bishop's Quarter"  style="padding:2px 0px;"
+				    name="Bishops-Quarter" />
+				 <input class="button" type="submit" value="Ballyvaughan"  style="padding:2px 0px;"
+				    name="Ballyvaughan" />
+				 <input class="button" type="submit" value="Gleninagh"  style="padding:2px 0px;"
+				    name="Gleninagh" />
+			      </form>
+			</div>
+		</div>
+
+		<div class="col-1-2">
+			<div class="content desktop" style="height:400px">
+                               <div id="map"></div>
+			</div>
+		</div>
+
+		<div class="col-1-4">
+			<div class="content">
+			      <form method="POST" action="/">
+				<input class="button" type="submit" value="Renville"  style="padding:2px 0px;"
+				    name="Renville" />
+				<input class="button" type="submit" value="Ballinacourty"  style="padding:2px 0px;"
+					 name="Ballinacourty" /> 
+				<input class="button" type="submit" value="Blackweir"  style="padding:2px 0px;"
+					 name="Blackweir" /> 
+				<input class="button" type="submit" value="Cave"  style="padding:2px 0px;"
+					 name="Cave" /> 
+				<input class="button" type="submit" value="Killeenaran"  style="padding:2px 0px;"
+				         name="Killeenaran" />
+				<input class="button" type="submit" value="Tarrea"  style="padding:2px 0px;"
+					 name="Tarrea" /> 
+				<input class="button" type="submit" value="Kinvara"  style="padding:2px 0px;"
+					 name="Kinvara" /> 
+				<input class="button" type="submit" value="Crushoa"  style="padding:2px 0px;"
+					 name="Crushoa" /> 
+			      </form>
+			</div>
+		</div>
+	</div>
+
+        <div class="grid">
+            <div class="col-1-1 mobile-col-1-1">
+                <div class="content unpadded">
+			      <form method="POST" action="/">
+				 <input class="button" type="submit" value="Parkmore"  style="padding:2px 0px;"
+				    name="Parkmore" />
+			      </form>
+		</div> 
+	    </div>
+        </div>            
+</body>
+</html>

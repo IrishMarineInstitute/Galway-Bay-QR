@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="../../static/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../static/css/simplegrid.css" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 1024px)' href="../../static/css/desktop.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 768px) and (max-width: 1024px)' href="../../static/css/ipad.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 540px) and (max-width: 768px)' href="../../static/css/duo.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)' href="../../static/css/mobile-portrait.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-width: 700px) and (max-height: 575.98px) and (orientation: landscape)' href="../../static/css/mobile-landscape.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(max-width: 700px) and (max-height: 575.98px) and (orientation: landscape)' href="../../static/css/tiny-landscape.css?ref=v1" />
+    <link rel="stylesheet" type="text/css" media='(min-device-width: 1px) and (max-device-width: 320px) and (orientation: portrait)' href="../../static/css/mobile-portrait.css?ref=v1" />
+
+<style>
+.center {
+	  display: block;
+          margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	  height: 75px;
+        }
+</style>
+
+</head>
+
+<body>
+	    <div class="galway-databox"> 
+		    <input class="galway-context"
+			   value="{{title}} at {{site}}" readonly/>
+		    <hr>
+
+                    {% for where,cm,sc,pic,when in entries %}
+		    <img src="{{pic}}" alt="{{pic}}" style="width:100%;max-height:600px;" class="responsive">
+			<p> {{ cm }} (<i>{{ sc }}</i>) seen at {{ where }} on {{ when }} </p>
+			<hr>
+		    {% endfor %}
+
+		    <p> These pictures and observations have been obtained from the <a href="https://ebird.org">eBird Project</a>
+		    using the <a href="https://pypi.org/project/ebird-api">eBird API</a>. 
+		     Fink, D., T. Auer, A. Johnston, M. Strimas-Mackey, S. Ligocky, O. Robinson, 
+		    W. Hochachka, L. Jaromczyk, C. Crowley, K. Dunham, A. Stillman, I. Davies, A. Rodewald, V. Ruiz-Gutierrez, C. Wood. 2023. eBird Status and Trends, Data Version: 2022; Relesed 2023. Cornell Lab of Ornitology, Ithaca, New York. <a href="https://doi.org/10.2173/ebirdst.2022">https://doi.org/10.2173/ebirdst.2022</a> </p>
+				
+		    <img src="../static/eBird.jpg" alt="eBird" style="width:50%;max-height:600px;" class="center">
+	    </div>
+
+</body>
+
+</html>
+
